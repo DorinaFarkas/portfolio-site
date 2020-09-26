@@ -15,7 +15,15 @@
 .Education-content-text {
   grid-row: 1;
   grid-column: 1 / span 5;
-  padding-top: 20%;
+}
+
+.Education-content-text li {
+  list-style: none;
+  margin: .8em 0;
+}
+
+.Education-content-text ul {
+  padding-left: 1.5em;
 }
 
 .Education-content-images {

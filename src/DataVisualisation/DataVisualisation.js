@@ -5,7 +5,7 @@ import ChordChart from './ChordChart';
 const DataVisualisation = () => {
   return (
     <>
-      <h2 style={{textAlign: 'center'}}>Economic Freedom 2020</h2>
+      <h2 style={{textAlign: 'center'}}>Economic Freedom Top 10 Rank</h2>
       <BumpChart />
       <h2 style={{textAlign: 'center'}}>Exported services in US dollar</h2>
       <ChordChart />

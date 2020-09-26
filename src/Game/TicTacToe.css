@@ -9,6 +9,9 @@
     display: flex;
     justify-content: center;
 }
+.TicTacToe-status {
+    text-align: center;
+}
 
 .board {
     width: 300px;

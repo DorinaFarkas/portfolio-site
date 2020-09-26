@@ -27,13 +27,13 @@ const TicTacToe = () => {
     const [xIsNext, setXIsNext] = useState(true);
     const winner = calculateWinner(history[stepNumber]);
     const xO = xIsNext ? 'X' : 'O';
+    let status;
 
     useEffect((winner, xIsNext) => {
         if (winner) {
             console.log(`you win ${xIsNext ? 'O' : 'X'}`)
         }
     }, [stepNumber])
-
 
     const handleClick = (i) => {
         const historyPoint = history.slice(0, stepNumber + 1);
@@ -47,11 +47,13 @@ const TicTacToe = () => {
         setStepNumber(historyPoint.length);
         setXIsNext(!xIsNext);
     }
+
     const jumpTo = (step) => {
         setStepNumber(step);
         setXIsNext(step % 2 === 0)
     }
-    const renderMoves = () =>
+
+    const renderMoves = () => (
         history.map((_step, move) => {
             const destination = move ? `Go to move #${move}` : 'Go to start';
             return (
@@ -60,10 +62,17 @@ const TicTacToe = () => {
                 </li>
             )
         })
+    )
 
+    if (winner) {
+        status = 'Winner: ' + winner;
+    } else {
+        status = 'Next player: ' + (xIsNext ? 'X' : 'O');
+    }
 
     return (
         <>
+            <div className="TicTacToe-status">{status}</div>
             <div className='TicTacToe-board-wrapper'>
                 <Board squares={history[stepNumber]} onClick={handleClick} />
             </div>

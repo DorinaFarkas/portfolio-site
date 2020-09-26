@@ -1,8 +1,8 @@
 import React, { createContext, Component } from 'react';
-import portrait1 from './portrait.png';
-import portrait2 from './portrait_glitch.png';
-import documenation from './documentation.png';
-import documenation_dark from './documentation_dark.png';
+import portrait1 from './images/portrait.png';
+import portrait2 from './images/portrait_glitch.png';
+import documenation from './images/documentation.png';
+import documenation_dark from './images/documentation_dark.png';
 
 export const ThemeContext = createContext();
 

@@ -10,7 +10,7 @@ const Todo = () => {
     const theme = isLightTheme ? light : dark;
     return (
         <TodoContextProvider>
-            <div style={{ background: theme.ui, color: theme.syntax, padding: '1em 6em 2em', margin: '20px' }}>
+            <div className='Todo' style={{ background: theme.ui, color: theme.syntax}}>
                 <TodoHeader />
                 <TodoList />
                 <NewTodoForm />

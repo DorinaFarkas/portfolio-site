@@ -12,7 +12,7 @@ function Works() {
     return (
         <div className="Works" id="Works" style={{ background: theme.bg, color: theme.syntax }}>
             <div className="section-title">
-                <h2>My Works</h2>
+                <h2>Little Projects</h2>
             </div>
             <div className="Works-conatiner">
 
