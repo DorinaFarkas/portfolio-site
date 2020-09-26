@@ -1,0 +1,49 @@
+.Experience {
+    padding: 0 10em 4em 10em;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.Experience-job {
+    padding: 1em 0;
+    display: grid;
+    position: relative; 
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.Experience-job .Experience-job-descreprion {
+    padding-top: .1em;
+    grid-column: 13 / 4;
+    grid-row: 1;
+    line-height: 1.5;
+}
+
+.Experience-job .Experience-job-details {
+    grid-column: 4 / 1;
+    grid-row: 1;
+}
+.Experience-job .Experience-job-details p { 
+    margin: .5em 0;
+    color: #b1b1b1;
+}
+
+@media only screen and (max-width: 1024px) {
+    .Experience {
+        padding: 0 6em 2em 6em;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .Experience {
+        padding: 0 3em 1em 3em;
+    }
+    .Experience-job {
+        grid-template-columns: 1fr;
+    }
+    .Experience-job .Experience-job-descreprion {
+        padding-top: .1em;
+        grid-column: 1;
+        grid-row: 2;
+        line-height: 1.5;
+    }
+}
