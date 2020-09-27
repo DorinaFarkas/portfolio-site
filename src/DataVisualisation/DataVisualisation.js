@@ -1,6 +1,7 @@
 import React from 'react';
 import BumpChart from './BumpChart';
 import ChordChart from './ChordChart';
+import '../DataVisualisation.css';
 
 const DataVisualisation = () => {
   return (

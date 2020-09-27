@@ -69,7 +69,7 @@ function ChordChart() {
     [14223100, 15913362, 27757338, 8526551, 0]]
 
     return (
-        <div style={{ height: "500px" }}>
+        <div className='ChordChart'>
             <MyResponsiveChord
                 matrix={matrix} />
         </div>

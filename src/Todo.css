@@ -1,9 +1,11 @@
   .Todo {
-    padding: 1em 6em 2em;
+    padding: 1em;
+    margin: auto;
+    max-width: 40em;
   }
 
   .Todo-list {
-    padding: 1em;
+    padding: 1em 1em .1em 1em;
   }
 
   .Todo-list ul {
@@ -28,7 +30,7 @@
   }
 
   form {
-    padding: 20px;
+    padding: 1.5em 1em 1em;
   }
 
   input[type=text] {
@@ -47,16 +49,11 @@
     display: block;
   }
 
-  @media only screen and (max-width: 1024px) {
-    .Todo {
-      padding: 1em 2em 2em;
-    }
-  }
   @media only screen and (max-width: 425px) {
-    .Todo {
-      padding: 1em;
-    }
     .Todo-list {
       padding: .5em;
+    }
+    form {
+      padding: 1em .5em .5em;;
     }
   }
