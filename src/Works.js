@@ -19,17 +19,20 @@ function Works() {
                 <WorkCard
                     icon={'chart-bar'}
                     title={'Data Visualisation'}
+                    description={'This project was made using React.js, Hooks, and nivo library'}
                     project={<DataVisualisation />}
 
                 />
                 <WorkCard
                     icon={'border-all'}
                     title={'Tic Tac Toe'}
+                    description={'This project was made using React.js, Hooks, and Context'}
                     project={<TicTacToe />}
                 />
                 <WorkCard
                     icon={'book'}
                     title={'Reading list'}
+                    description={'This project was made using React.js, Hooks, Context, Reducer, and uuid package'}
                     project={<Todo />}
                 />
 

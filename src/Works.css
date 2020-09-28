@@ -49,6 +49,9 @@
     max-width: 5em;
     max-height: 4em;
 }
+.Work-icon-title-mobile {
+    display: none;
+}
 
 @media only screen and (max-width: 1024px) {
     .Works {
@@ -66,5 +69,11 @@
 @media only screen and (max-width: 425px) {
     .Works-conatiner {
         flex-direction: column;
+    }
+    .Work-icon-title-mobile {
+        display: block;
+        text-align: center;
+        line-height: 1.8;
+        margin-bottom: 2rem;
     }
 }

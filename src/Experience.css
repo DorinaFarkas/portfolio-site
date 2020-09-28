@@ -1,6 +1,5 @@
 .Experience {
     padding: 0 10em 4em 10em;
-    background-color: white;
     display: flex;
     flex-direction: column;
 }
@@ -45,5 +44,11 @@
         grid-column: 1;
         grid-row: 2;
         line-height: 1.5;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    .Experience {
+        padding: 0 2em 1em 2em;
     }
 }

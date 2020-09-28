@@ -14,12 +14,15 @@ const PopUp = (props) => {
             <div className='PopUp-bg' onClick={handleClick} style={{ background: theme.bg }}></div>
             <div className='PopUp' style={{ color: theme.syntax, background: theme.ui }}>
                 <div>
+                    <div style={{background: theme.gray3, padding: '.2em 1em 1em 1em'}}>
                     <span className='PopUp-close' onClick={handleClick}>
                         <FontAwesomeIcon
-                        icon='times'
-                        size="1x"
-                    /></span>
-                    <p style={{ textAlign: 'center' }}>{props.title}</p>
+                            icon='times'
+                            size="1x"
+                        /></span>
+                        <p style={{ textAlign: 'center', paddingTop: '1em' }}>{props.title}</p>
+                        <p style={{ textAlign: 'center' }}>{props.description}</p>
+                    </div>
                     {props.project}
                 </div>
             </div>

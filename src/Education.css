@@ -67,6 +67,10 @@
 }
 
 @media only screen and (max-width: 425px) {
+  .Education {
+    padding: 0 2em;
+  }
+
   .Education-content {
     grid-template-rows: repeat(1, 1);
     grid-template-columns: 1fr;

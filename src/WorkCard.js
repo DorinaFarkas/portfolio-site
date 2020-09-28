@@ -3,7 +3,7 @@ import { ThemeContext } from './ThemeContext';
 import PopUp from './PopUp';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-function WorkCard({ icon, title, project }) {
+function WorkCard({ icon, title, project, description }) {
     const [isOpen, setIsOpen] = useState(false);
     const { isLightTheme, light, dark } = useContext(ThemeContext);
     const theme = isLightTheme ? light : dark;
@@ -33,7 +33,11 @@ function WorkCard({ icon, title, project }) {
                     <p>{title}</p>
                 </div>
             </div>
-            {isOpen ? <PopUp project={project} togglePopUp={togglePopUp} title={title} /> : null}
+            <div className='Work-icon-title-mobile' onClick={togglePopUp}>
+                <h4>{title}</h4>
+                <p>{description}</p>
+            </div>
+            {isOpen ? <PopUp project={project} togglePopUp={togglePopUp} title={title} description={description} /> : null}
         </div>
     );
 }

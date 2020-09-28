@@ -12,6 +12,7 @@
 
 .TicTacToe-status {
     text-align: center;
+    padding: 3rem 0;
 }
 
 .board {
@@ -20,7 +21,6 @@
     display: grid;
     grid-template: repeat(3, 1fr) / repeat(3, 1fr);
     gap: 1rem;
-    margin: 5rem 0;
 }
 
 .X {

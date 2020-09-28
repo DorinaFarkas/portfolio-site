@@ -13,8 +13,8 @@ class ThemeContextProvider extends Component {
 
         this.state = {
             isLightTheme: localData ? JSON.parse(localData) : true,
-            light: { syntax: '#555', ui: '#f3f3f3', bg: '#e6e6e6', pic: portrait1, doc: documenation },
-            dark: { syntax: '#dedede', ui: '#151515', bg: '#212121', pic: portrait2, doc: documenation_dark }
+            light: { syntax: '#555', ui: '#f3f3f3', bg: '#e6e6e6', gray3: '#ddd', pic: portrait1, doc: documenation },
+            dark: { syntax: '#dedede', ui: '#151515', bg: '#212121', gray3: '#333333', pic: portrait2, doc: documenation_dark }
         }
     }
 

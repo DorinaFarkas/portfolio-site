@@ -24,7 +24,7 @@
     opacity: .7;
   }
 
-  .Todo-list li h4, h5 {
+  .Todo-list li h4, .Todo-list h5 {
     font-weight: 600;
     margin: .4em;
   }

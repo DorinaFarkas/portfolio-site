@@ -65,12 +65,16 @@
 }
 
 @media only screen and (max-width: 425px) {
+    .Home {
+        padding: 0 2em;
+    }
+
     .Home-image {
         display: none;
     }
 
     .Home-content {
         display: block;
-        margin-top: 8em;
+        margin-top: 11em;
     }
 }
