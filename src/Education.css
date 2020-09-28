@@ -5,6 +5,13 @@
   flex-direction: column;
 }
 
+.Education-wrapper {
+  height: inherit;
+  max-height: 1000px;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
 .Education-content {
   display: grid;
   position: relative;
@@ -70,7 +77,6 @@
   .Education {
     padding: 0 2em;
   }
-
   .Education-content {
     grid-template-rows: repeat(1, 1);
     grid-template-columns: 1fr;

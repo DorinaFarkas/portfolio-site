@@ -4,10 +4,17 @@
     flex-direction: column;
 }
 
+.Experience-wrapper {
+    height: inherit;
+    max-height: 1000px;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
 .Experience-job {
     padding: 1em 0;
     display: grid;
-    position: relative; 
+    position: relative;
     grid-template-columns: repeat(12, 1fr);
 }
 
@@ -22,7 +29,8 @@
     grid-column: 4 / 1;
     grid-row: 1;
 }
-.Experience-job .Experience-job-details p { 
+
+.Experience-job .Experience-job-details p {
     margin: .5em 0;
     color: #b1b1b1;
 }
@@ -32,6 +40,7 @@
         padding: 0 6em 2em 6em;
     }
 }
+
 @media only screen and (max-width: 768px) {
     .Experience {
         padding: 0 3em 1em 3em;
@@ -47,7 +56,7 @@
     }
 }
 
-@media only screen and (max-width: 425px){
+@media only screen and (max-width: 425px) {
     .Experience {
         padding: 0 2em 1em 2em;
     }

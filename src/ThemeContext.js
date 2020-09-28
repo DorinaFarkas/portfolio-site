@@ -1,6 +1,6 @@
 import React, { createContext, Component } from 'react';
-import portrait1 from './images/portrait.png';
-import portrait2 from './images/portrait_glitch.png';
+import portrait1 from './images/portrai_small.png';
+import portrait2 from './images/portrait_glitch_small.png';
 import documenation from './images/documentation.png';
 import documenation_dark from './images/documentation_dark.png';
 

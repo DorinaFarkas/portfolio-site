@@ -2,6 +2,7 @@
     padding: 0 10em 4em 10em;
     display: flex;
     flex-direction: column;
+    transition: all 0.2s ease-in-out;
 }
 
 .Works-conatiner {
