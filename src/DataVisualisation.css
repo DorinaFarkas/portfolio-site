@@ -4,6 +4,20 @@
 .BumpChart {
     height: 30em;
 }
+
+@media only screen and (min-width: 1700px) {
+    .ChordChart-wrapper {
+        width: 40%;
+    }
+    
+    .BumpChart-wrapper {
+        width: 60%;
+    }
+    
+    .DataVisualisation {
+    display: flex;
+    }
+  }
 @media only screen and (max-width: 425px) {
     .BumpChart {
         height: 20em;

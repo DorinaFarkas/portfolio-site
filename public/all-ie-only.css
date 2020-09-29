@@ -1,0 +1,14 @@
+.ie {
+    display: none;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    body div.ie {
+        font-family: sans-serif;
+        display: block;
+        text-align: center;
+        padding-top: 15%;
+        line-height: 2;
+        font-size: 1.2em;
+    }
+}

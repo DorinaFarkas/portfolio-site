@@ -1,6 +1,6 @@
 import React from 'react';
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { fab } from '@fortawesome/free-brands-svg-icons'
+import { fab, faLinkedin, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 import { faCheckSquare, faCoffee, faChartBar, faBook, faGhost, faAdjust, faBorderAll, faTimes } from '@fortawesome/free-solid-svg-icons'
 import Home from './Home';
 import Experience from './Experience';
@@ -9,7 +9,7 @@ import Works from './Works';
 import './App.css';
 import ThemeContextProvider from './ThemeContext';
 
-library.add(fab, faCheckSquare, faCoffee, faChartBar, faBook , faGhost, faAdjust, faBorderAll, faTimes);
+library.add(fab, faCheckSquare, faCoffee, faChartBar, faBook , faGhost, faAdjust, faBorderAll, faTimes, faLinkedin, faLinkedinIn);
 
 function App() {
   return (

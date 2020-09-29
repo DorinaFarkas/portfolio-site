@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import './Experience.css';
 import Job from './Job';
 import { ThemeContext } from './ThemeContext';
+import { Element } from 'react-scroll';
 
 const jobs = [
     { id: 1, company: 'Robert Half', role: 'Front-End Developer', date: 'Feb 2020 - Present', city: 'London', description: ['At Robert Half, I was part of an international developer team. We worked together on 16 different websites for 16 countries. Their websites were built in ', <b>Drupal</b>, '. To maintain and enhance them we used ', <b>HTML, CSS, JavaScript, jQuery</b>, ', and ', <b>Bootstrap</b>, '. A major part of my role was also to work in ', <b>SalesForce Marketing Cloud</b>, ' with languages like ', <b>Ampscipt</b>, ' and ', <b>server-side JavaScript</b>, '.'] },
@@ -14,14 +15,16 @@ function Experience() {
     const { isLightTheme, light, dark } = useContext(ThemeContext);
     const theme = isLightTheme ? light : dark;
     return (
-        <div className="Experience" id="Experience" style={{ background: theme.bg, color: theme.syntax }}>
-            <div className='Experience-wrapper'>
-                <div className="section-title">
-                    <h2>Experience</h2>
+        <Element name="Experience" >
+            <div className="Experience" id="Experience" style={{ background: theme.bg, color: theme.syntax }}>
+                <div className='Experience-wrapper'>
+                    <div className="section-title">
+                        <h2>Experience</h2>
+                    </div>
+                    <Job jobs={jobs} key={jobs.id} />
                 </div>
-                <Job jobs={jobs} key={jobs.id} />
             </div>
-        </div>
+        </Element>
     );
 }
 
