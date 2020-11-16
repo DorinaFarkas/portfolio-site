@@ -7,6 +7,7 @@ import { ResponsiveChord } from '@nivo/chord'
 // website examples showcase many properties,
 // you'll often use just a few of them.
 const lenegendDirection = window.screen.width < 500 ? 'column' : 'row';
+const translateXNumber = window.screen.width < 500 ? -90 : 0;
 const MyResponsiveChord = ({ matrix /* see matrix tab */ }) => (
     <ResponsiveChord
         matrix={matrix}
@@ -41,10 +42,10 @@ const MyResponsiveChord = ({ matrix /* see matrix tab */ }) => (
                 anchor: 'bottom',
                 direction: lenegendDirection,
                 justify: false,
-                translateX: 0,
-                translateY: 70,
+                translateX: translateXNumber,
+                translateY: 90,
                 itemWidth: 80,
-                itemHeight: 14,
+                itemHeight: 18,
                 itemsSpacing: 0,
                 itemTextColor: '#999',
                 itemDirection: 'left-to-right',

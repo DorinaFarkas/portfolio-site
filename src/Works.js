@@ -5,6 +5,7 @@ import Todo from './Todo';
 import { ThemeContext } from './ThemeContext';
 import './Works.css';
 import TicTacToe from './Game/TicTacToe';
+import { Container, Row, Col } from 'react-bootstrap';
 import { Element } from 'react-scroll'
 
 function Works() {
@@ -17,26 +18,38 @@ function Works() {
                     <h2>Little Projects</h2>
                 </div>
                 <div className="Works-conatiner">
+                    <Container>
+                        <Row className="justify-content-md-center">
+                            <Col xs>
+                                <WorkCard
+                                    icon={'chart-bar'}
+                                    title={'Data Visualisation'}
+                                    description={'This project was made by using React.js, Hooks, and nivo library'}
+                                    project={<DataVisualisation />}
 
-                    <WorkCard
-                        icon={'chart-bar'}
-                        title={'Data Visualisation'}
-                        description={'This project was made by using React.js, Hooks, and nivo library'}
-                        project={<DataVisualisation />}
+                                />
+                            </Col>
 
-                    />
-                    <WorkCard
-                        icon={'border-all'}
-                        title={'Tic Tac Toe'}
-                        description={'This project was made by using React.js, Hooks, and Context'}
-                        project={<TicTacToe />}
-                    />
-                    <WorkCard
-                        icon={'book'}
-                        title={'Reading list'}
-                        description={'This project was made by using React.js, Hooks, Context, Reducer, and uuid package'}
-                        project={<Todo />}
-                    />
+                            <Col xs>
+                                <WorkCard
+                                    icon={'border-all'}
+                                    title={'Tic Tac Toe'}
+                                    description={'This project was made by using React.js, Hooks, and Context'}
+                                    project={<TicTacToe />}
+                                />
+
+                            </Col>
+                            <Col xs>
+                                <WorkCard
+                                    icon={'book'}
+                                    title={'Reading list'}
+                                    description={'This project was made by using React.js, Hooks, Context, Reducer, and uuid package'}
+                                    project={<Todo />}
+                                />
+                            </Col>
+                        </Row>
+
+                    </Container>
 
                 </div>
             </div>
