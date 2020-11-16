@@ -1,25 +1,46 @@
-.ChordChart {
-    height: 30em;
+.DataVisualisation {
+    padding: 1em;
 }
+
+.ChordChart {
+    height: 20em;
+}
+
 .BumpChart {
     height: 30em;
+}
+
+.BumpChart-wrapper {
+    padding: 0 1em
+}
+
+.ChordChart-wrapper {
+    padding: 0 1em
 }
 
 @media only screen and (min-width: 1700px) {
     .ChordChart-wrapper {
         width: 40%;
     }
-    
     .BumpChart-wrapper {
         width: 60%;
     }
-    
     .DataVisualisation {
-    display: flex;
+        display: flex;
     }
-  }
+}
+
 @media only screen and (max-width: 425px) {
+    .DataVisualisation {
+        padding: 1em .1em;
+    }
     .BumpChart {
         height: 20em;
     }
-  }
+    .BumpChart-wrapper {
+        padding: 0 .1em
+    }
+    .ChordChart-wrapper {
+        padding: 0 .1em
+    }
+}

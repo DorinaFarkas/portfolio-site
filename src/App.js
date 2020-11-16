@@ -1,4 +1,5 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab, faLinkedin, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 import { faCheckSquare, faCoffee, faChartBar, faBook, faGhost, faAdjust, faBorderAll, faTimes } from '@fortawesome/free-solid-svg-icons'

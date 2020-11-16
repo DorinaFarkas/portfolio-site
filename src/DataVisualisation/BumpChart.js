@@ -1,6 +1,7 @@
 import React from 'react';
 import { ResponsiveBump } from '@nivo/bump'
 
+const angle = window.screen.width < 500 ? 45 : 0
 const MyResponsiveBump = ({ data }) => (
     <ResponsiveBump
         data={data}
@@ -23,7 +24,7 @@ const MyResponsiveBump = ({ data }) => (
         axisTop={{
             tickSize: 5,
             tickPadding: 5,
-            tickRotation: 0,
+            tickRotation: angle,
             legend: '',
             legendPosition: 'middle',
             legendOffset: -36
@@ -32,7 +33,7 @@ const MyResponsiveBump = ({ data }) => (
         axisBottom={{
             tickSize: 5,
             tickPadding: 5,
-            tickRotation: 0,
+            tickRotation: angle,
             legend: '',
             legendPosition: 'middle',
             legendOffset: 32

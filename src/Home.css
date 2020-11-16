@@ -64,9 +64,47 @@ nav a {
     cursor: pointer;
 }
 
+.navbar-toggler, .navbar-toggler:active, .navbar-toggler:focus {
+    border: 0;
+    outline: 0;
+}
+
+.navbar {
+    padding: .2em 9em;
+}
+
+.ThemeToggle {
+    cursor: pointer;
+    position: absolute;
+    right: 2rem;
+}
+
+.bg-light a.active {
+    color: #2e2e2e;
+    text-decoration: none;
+}
+.bg-dark a.active {
+    color: #dddddd;
+    text-decoration: none;
+}
+
+.bg-dark {
+    background-color: #333333!important;;
+}
+.bg-light {
+    background-color: #ddd!important;;
+}
+
+.navbar-toggler {
+    padding-left: 0;
+}
+
 @media only screen and (max-width: 1024px) {
     .Home {
         padding: 0 6em;
+    }
+    .navbar {
+        padding: .2em 6em;
     }
     .Home-navigation a {
         margin-right: 2em;
@@ -77,6 +115,9 @@ nav a {
     .Home {
         padding: 0 3em;
     }
+    .navbar {
+        padding: .1em 3em;
+    }
     .Home-navigation a {
         margin-right: 1em;
     }
@@ -86,13 +127,14 @@ nav a {
     .Home {
         padding: 0 2em;
     }
-
+    .navbar {
+        padding: .1em 2em;
+    }
     .Home-image {
         display: none;
     }
-
     .Home-content {
         display: block;
-        margin-top: 11em;
+        margin-top: 9em;
     }
 }

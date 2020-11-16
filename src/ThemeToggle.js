@@ -7,7 +7,7 @@ const ThemeToggle = () => {
     const { isLightTheme, light, dark } = useContext(ThemeContext);
     const theme = isLightTheme ? light : dark;
     return ( 
-        <div style={{color: theme.syntax, cursor: "pointer", position: 'absolute', top: '2rem', right: '2rem'}} onClick={toggleTheme}><FontAwesomeIcon
+        <div className="ThemeToggle" style={{color: theme.syntax}} onClick={toggleTheme}><FontAwesomeIcon
         icon='adjust'
         size="1x"
     /></div>

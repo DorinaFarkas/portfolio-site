@@ -1,10 +1,12 @@
 import React from 'react';
 import { ResponsiveChord } from '@nivo/chord'
+
 // make sure parent container have a defined height when using
 // responsive component, otherwise height will be 0 and
 // no chart will be rendered.
 // website examples showcase many properties,
 // you'll often use just a few of them.
+const lenegendDirection = window.screen.width < 500 ? 'column' : 'row';
 const MyResponsiveChord = ({ matrix /* see matrix tab */ }) => (
     <ResponsiveChord
         matrix={matrix}
@@ -37,7 +39,7 @@ const MyResponsiveChord = ({ matrix /* see matrix tab */ }) => (
         legends={[
             {
                 anchor: 'bottom',
-                direction: 'row',
+                direction: lenegendDirection,
                 justify: false,
                 translateX: 0,
                 translateY: 70,

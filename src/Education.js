@@ -19,7 +19,7 @@ function Education() {
                             <p>I am a self-taught Front-End Developer</p>
                             <p>I've graduated in Industrial design engineering at Obuda University in 2018</p>
                             <p>The title of my thesis is Smart lamp for the Deaf and Hearing Impaired</p>
-                            <h3>Some of the courses I've completed:</h3>
+                            <h5>Some of the courses I've completed:</h5>
                             <ul>
                                 <li>HTML, CSS and JavaScript <br /><span style={{ opacity: '.7' }}>Coursera</span></li>
                                 <li>Front-End Web UI Frameworks and Tools <br /><span style={{ opacity: '.7' }}>Coursera</span></li>

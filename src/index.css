@@ -16,11 +16,10 @@ a:hover {
 }
 
 .section-title {
-  align-self: center;
+  text-align: center;
 }
 
 .section-title h2{
-  margin-top: 2em;
-  font-size: 2em;
+  margin: 2em 0 1.5em 0;
   font-weight: 400;
 }

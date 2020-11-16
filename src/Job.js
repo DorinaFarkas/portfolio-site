@@ -7,8 +7,8 @@ function Job({ jobs }) {
                 {jobs.map(job => (
                 <div key={job.id} className="Experience-job">
                     <div className="Experience-job-details">
-                        <h3>{job.company}</h3>
-                        <h4>{job.role}</h4>
+                        <h5>{job.company}</h5>
+                        <h5>{job.role}</h5>
                         <p>{job.date}</p>
                         <p>{job.city}</p>
                     </div>
