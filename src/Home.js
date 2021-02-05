@@ -11,12 +11,18 @@ const Home = () => {
     const headerRef = useRef(null);
 
     useEffect(() => {
-        gsap.from(headerRef.current, {
-            duration: .5,
-            autoAlpha: 0,
-            ease: 'none',
-            delay: 1
-        })
+        gsap.fromTo(headerRef.current,
+            {
+                y: -50,
+                opacity: 0
+            },
+            {
+                duration: 1.5,
+                y: 0,
+                opacity: 1,
+                ease: 'power1'
+            }
+        )
     }, [])
     return (
         <Element name="Home" >
@@ -24,7 +30,7 @@ const Home = () => {
                 <div className='Home-wrapper'>
                     <NavBar />
                     <div className="Home-content">
-                        <div ref={headerRef} className="Home-text">
+                        <div ref={headerRef} className="Home-text" style={{opacity: 0}}>
                             <h1>Hi, <br />I am Dorina</h1>
                             <h2>Front-End Developer</h2>
                         </div>

@@ -21,14 +21,14 @@ function Education() {
                 y: -20
             },
             {
-                duration: 1,
+                duration: .7,
                 autoAlpha: 1,
                 y: 0,
                 ease: 'none',
                 scrollTrigger: {
                     id: 'educationText',
                     trigger: educationTextRef.current,
-                    start: 'top center+=100',
+                    start: 'top center+=300',
                     toggleActions: 'play none none reverse',
                 }
 
@@ -43,12 +43,12 @@ function Education() {
             {
                 opacity: 1,
                 x: 0,
-                delay: 1,
-                duration: 1.2, 
+                delay: .7,
+                duration: 1, 
                 scrollTrigger: {
                     id: 'educationImages',
                     trigger: educationImagesRef.current,
-                    start: 'top center+=100',
+                    start: 'top center+=300',
                     toggleActions: 'play none none reverse',
                 }
 
