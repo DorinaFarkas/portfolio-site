@@ -9,9 +9,9 @@ const NavBar = () => {
     const { isLightTheme, light, dark } = useContext(ThemeContext);
     const theme = isLightTheme ? light : dark;
     const [expanded, setExpanded] = useState(false);
-    
+
     const navbarInstance = (
-        <Navbar collapseOnSelect  expanded={expanded} expand="md" fixed="top" variant={theme.variant} bg={theme.variant}>
+        <Navbar collapseOnSelect expanded={expanded} expand="md" fixed="top" variant={theme.variant} bg={theme.variant}>
             <Navbar.Toggle onClick={() => setExpanded(expanded ? false : "expanded")} aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="mr-auto">
