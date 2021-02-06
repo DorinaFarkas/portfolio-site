@@ -13,12 +13,10 @@ const Home = () => {
     useEffect(() => {
         gsap.fromTo(headerRef.current,
             {
-                y: -50,
                 opacity: 0
             },
             {
-                duration: 1.5,
-                y: 0,
+                duration: 2,
                 opacity: 1,
                 ease: 'power1'
             }

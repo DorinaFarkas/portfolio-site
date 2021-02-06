@@ -11,7 +11,8 @@ function Education() {
     const { isLightTheme, light, dark } = useContext(ThemeContext);
     const theme = isLightTheme ? light : dark;
     const educationTextRef = useRef(null);
-    const educationImagesRef = useRef(null);
+    const educationImageFirstRef = useRef(null);
+    const educationImageSecondRef = useRef(null);
 
     useEffect(() => {
         gsap.fromTo(
@@ -32,10 +33,11 @@ function Education() {
                     toggleActions: 'play none none reverse',
                 }
 
-            })
-        
+            }
+        )
+
         gsap.fromTo(
-            educationImagesRef.current,
+            educationImageFirstRef.current,
             {
                 opacity: 0,
                 x: 20
@@ -43,11 +45,31 @@ function Education() {
             {
                 opacity: 1,
                 x: 0,
-                delay: .7,
-                duration: 1, 
+                delay: .5,
+                duration: 1,
                 scrollTrigger: {
                     id: 'educationImages',
-                    trigger: educationImagesRef.current,
+                    trigger: educationImageFirstRef.current,
+                    start: 'top center+=300',
+                    toggleActions: 'play none none reverse',
+                }
+
+            }
+        )
+        gsap.fromTo(
+            educationImageSecondRef.current,
+            {
+                opacity: 0,
+                x: 20
+            },
+            {
+                opacity: 1,
+                x: 0,
+                delay: 1.2,
+                duration: 1,
+                scrollTrigger: {
+                    id: 'educationImages',
+                    trigger: educationImageSecondRef.current,
                     start: 'top center+=300',
                     toggleActions: 'play none none reverse',
                 }
@@ -75,12 +97,12 @@ function Education() {
                                 <li>The Web Developer Bootcamp <br /> <span style={{ opacity: '.7' }}>Udemy</span></li>
                             </ul>
                         </div>
-                        <div ref={educationImagesRef} className="Education-content-images" id="educationImages">
+                        <div className="Education-content-images">
                             <div className="image-stack">
-                                <div className="image-stack__item image-stack__item--top">
+                                <div ref={educationImageFirstRef} className="image-stack__item image-stack__item--top">
                                     <img src={photo1} alt="3D lamp" />
                                 </div>
-                                <div className="image-stack__item image-stack__item--bottom">
+                                <div ref={educationImageSecondRef} className="image-stack__item image-stack__item--bottom">
                                     <img src={theme.doc} alt="documentation of a lamp" />
                                 </div>
                             </div>

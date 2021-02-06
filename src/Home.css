@@ -60,17 +60,20 @@ nav {
     display: flex;
 }
 
-nav a {
-    cursor: pointer;
-}
-
 .navbar-toggler, .navbar-toggler:active, .navbar-toggler:focus {
     border: 0;
     outline: 0;
 }
 
-.navbar {
-    padding: .2em 9em;
+.navbar-nav {
+    padding: .4em 8em;
+}
+
+.navbar-nav a {
+    padding: 0.2em 1em 0 1em;
+    cursor: pointer;
+    font-weight: 400;
+    letter-spacing: 1px;
 }
 
 .ThemeToggle {
@@ -79,13 +82,19 @@ nav a {
     right: 2rem;
 }
 
-.bg-light a.active {
-    color: #2e2e2e;
+.bg-light .navbar-nav a.active {
+    color: #292929;
+    transition: all;
     text-decoration: none;
 }
-.bg-dark a.active {
-    color: #dddddd;
+.bg-dark .navbar-nav a.active {
+    color: #cacaca;
+    transition: all;
     text-decoration: none;
+}
+
+.bg-light .navbar-nav a:hover{
+    color: #292929;
 }
 
 .bg-dark {
@@ -103,7 +112,7 @@ nav a {
     .Home {
         padding: 0 6em;
     }
-    .navbar {
+    .navbar-nav {
         padding: .2em 6em;
     }
     .Home-navigation a {
@@ -115,7 +124,7 @@ nav a {
     .Home {
         padding: 0 3em;
     }
-    .navbar {
+    .navbar-nav a {
         padding: .1em 3em;
     }
     .Home-navigation a {
@@ -127,7 +136,7 @@ nav a {
     .Home {
         padding: 0 2em;
     }
-    .navbar {
+    .navbar-nav a {
         padding: .1em 2em;
     }
     .Home-image {
