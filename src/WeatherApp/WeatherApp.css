@@ -12,11 +12,12 @@
   main {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75));
     padding: 6rem;
+    min-height: 80vh;
   }
   
   .search-box {
     width: 100%;
-    margin: 0 0 75px;
+    margin: 0 0 4rem;
   }
   
   .search-box .search-bar {
@@ -90,3 +91,12 @@
     font-weight: 700;
     text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
   }
+  @media only screen and (max-width: 425px) {
+    main {
+        padding: 2rem;
+    }
+    .search-box {
+        width: 100%;
+        margin: 0 0 1em;
+      }
+}
