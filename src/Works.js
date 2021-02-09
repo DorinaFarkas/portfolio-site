@@ -7,6 +7,7 @@ import './Works.css';
 import TicTacToe from './Game/TicTacToe';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Element } from 'react-scroll'
+import WeatherApp from './WeatherApp/WeatherApp';
 
 function Works() {
     const { isLightTheme, light, dark } = useContext(ThemeContext);
@@ -45,6 +46,14 @@ function Works() {
                                     title={'Reading list'}
                                     description={'This project was made by using React.js, Hooks, Context, Reducer, and uuid package'}
                                     project={<Todo />}
+                                />
+                            </Col>
+                            <Col xs>
+                                <WorkCard
+                                    icon={'cloud-sun-rain'}
+                                    title={'Weather app'}
+                                    description={'This project was made by using React.js, Hooks, OpenWeatherMap API'}
+                                    project={<WeatherApp />}
                                 />
                             </Col>
                         </Row>
