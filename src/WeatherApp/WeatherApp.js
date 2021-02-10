@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './WeatherApp.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const api = {
     key: "d4a0a48d0dd594bba0d58e619093a6c5",
     base: "https://api.openweathermap.org/data/2.5/"
@@ -8,6 +9,7 @@ const api = {
 function WeatherApp() {
     const [query, setQuery] = useState('');
     const [weather, setWeather] = useState({});
+    const weatherIcon = { 'Snow': 'snowflake', 'Clouds': 'cloud', 'Fog': 'smog', 'Mist': 'smog', 'Clear': 'sun' }
 
     const search = evt => {
         if (evt.key === "Enter") {
@@ -48,15 +50,18 @@ function WeatherApp() {
                 </div>
                 {(typeof weather.main != "undefined") ? (
                     <div>
+                        <div className="weather-box">
+                            <div className="weather-icon">
+                                <FontAwesomeIcon icon={weatherIcon[weather.weather[0].main]} size="4x" />
+                            </div>
+                            <div className="temp">
+                                {Math.round(weather.main.temp)}°c
+                            </div>
+                            <div className="weather-text">{weather.weather[0].main}</div>
+                        </div>
                         <div className="location-box">
                             <div className="location">{weather.name}, {weather.sys.country}</div>
                             <div className="date">{dateBuilder(new Date())}</div>
-                        </div>
-                        <div className="weather-box">
-                            <div className="temp">
-                                {Math.round(weather.main.temp)}°c
-            </div>
-                            <div className="weather">{weather.weather[0].main}</div>
                         </div>
                     </div>
                 ) : ('')}
