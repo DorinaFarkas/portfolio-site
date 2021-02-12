@@ -125,7 +125,7 @@ nav {
         padding: 0 3em;
     }
     .navbar-nav a {
-        padding: .1em 3em;
+        padding: .1em 1em;
     }
     .Home-navigation a {
         margin-right: 1em;
@@ -137,7 +137,7 @@ nav {
         padding: 0 2em;
     }
     .navbar-nav a {
-        padding: .1em 2em;
+        padding: .5em 0;
     }
     .Home-image {
         display: none;

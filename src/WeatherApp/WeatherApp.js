@@ -9,7 +9,7 @@ const api = {
 function WeatherApp() {
     const [query, setQuery] = useState('');
     const [weather, setWeather] = useState({});
-    const weatherIcon = { 'Snow': 'snowflake', 'Clouds': 'cloud', 'Fog': 'smog', 'Mist': 'smog', 'Clear': 'sun', 'Rain': 'cloud-showers-heavy', 'Haze': 'smog' }
+    const weatherIcon = { 'Snow': 'snowflake', 'Clouds': 'cloud', 'Fog': 'smog', 'Mist': 'smog', 'Clear': 'sun', 'Rain': 'cloud-showers-heavy', 'Haze': 'smog', 'Drizzle': 'cloud-rain' }
 
     const search = evt => {
         if (evt.key === "Enter") {
