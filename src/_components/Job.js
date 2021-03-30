@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import { gsap, ScrollTrigger } from "gsap/all";
-import './Job.css';
+import '../_styleSheets/Job.css';
 
 gsap.registerPlugin(ScrollTrigger);
 

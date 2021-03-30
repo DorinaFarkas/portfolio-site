@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { ThemeContext } from './ThemeContext';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import "./PopUp.css";
+import "../_styleSheets/PopUp.css";
 
 const PopUp = (props) => {
     const { isLightTheme, light, dark } = useContext(ThemeContext);

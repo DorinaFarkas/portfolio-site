@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { ThemeContext } from '../ThemeContext';
+import { ThemeContext } from '../../_components/ThemeContext';
 
 const Square = ({ value, onClick }) => {
     const { isLightTheme, light, dark } = useContext(ThemeContext);

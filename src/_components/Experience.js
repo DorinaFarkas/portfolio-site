@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import './Experience.css';
+import '../_styleSheets/Experience.css';
 import Job from './Job';
 import { ThemeContext } from './ThemeContext';
 import { Element } from 'react-scroll';

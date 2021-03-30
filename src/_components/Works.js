@@ -1,13 +1,13 @@
 import React, { useContext } from 'react';
 import WorkCard from './WorkCard';
-import DataVisualisation from './DataVisualisation/DataVisualisation';
+import DataVisualisation from '../Projects/DataVisualisation/DataVisualisation';
 import Todo from './Todo';
 import { ThemeContext } from './ThemeContext';
-import './Works.css';
-import TicTacToe from './Game/TicTacToe';
+import '../_styleSheets/Works.css';
+import TicTacToe from '../Projects/Game/TicTacToe';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Element } from 'react-scroll'
-import WeatherApp from './WeatherApp/WeatherApp';
+import WeatherApp from '../Projects/WeatherApp/WeatherApp';
 
 function Works() {
     const { isLightTheme, light, dark } = useContext(ThemeContext);

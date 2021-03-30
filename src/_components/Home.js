@@ -1,6 +1,6 @@
 import React, { useContext, useRef, useEffect } from 'react';
 import { gsap } from "gsap/all";
-import './Home.css';
+import '../_styleSheets/Home.css';
 import NavBar from './Navbar';
 import { ThemeContext } from './ThemeContext';
 import { Element } from 'react-scroll';

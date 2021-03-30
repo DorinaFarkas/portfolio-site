@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Board from './Board.js';
-import './TicTacToe.css'
+import '../../_styleSheets/TicTacToe.css'
 
 const calculateWinner = (squares) => {
     const lines = [

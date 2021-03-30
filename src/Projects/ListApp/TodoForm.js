@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
 import { TodoContext } from './TodoContext';
-import { ThemeContext } from './ThemeContext';
+import { ThemeContext } from '../../_components/ThemeContext';
 
 const NewTodoForm = () => {
     const { isLightTheme, light, dark } = useContext(ThemeContext);

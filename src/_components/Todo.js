@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
-import TodoContextProvider from './TodoContext';
-import TodoHeader from './TodoHeader';
-import NewTodoForm from './TodoForm';
-import TodoList from './TodoList';
+import TodoContextProvider from '../Projects/ListApp/TodoContext';
+import TodoHeader from '../Projects/ListApp/TodoHeader';
+import NewTodoForm from '../Projects/ListApp/TodoForm';
+import TodoList from '../Projects/ListApp/TodoList';
 import { ThemeContext } from './ThemeContext';
 
 const Todo = () => {

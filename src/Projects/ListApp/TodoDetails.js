@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { TodoContext } from './TodoContext';
-import './Todo.css';
-import { ThemeContext } from './ThemeContext';
+import '../../_styleSheets/Todo.css';
+import { ThemeContext } from '../../_components/ThemeContext';
 
 const TodoDetails = ({ task }) => {
     const { dispatch } = useContext(TodoContext);

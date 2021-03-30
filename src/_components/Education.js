@@ -1,8 +1,8 @@
 import React, { useContext, useRef, useEffect } from 'react';
 import { gsap, ScrollTrigger } from "gsap/all";
-import './Education.css';
+import '../_styleSheets/Education.css';
 import { ThemeContext } from './ThemeContext';
-import photo1 from './images/render.png';
+import photo1 from '../_images/render.png';
 import { Element } from 'react-scroll';
 
 gsap.registerPlugin(ScrollTrigger);

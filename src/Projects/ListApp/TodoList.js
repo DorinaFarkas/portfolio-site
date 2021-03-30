@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
-import { ThemeContext } from './ThemeContext';
-import './Todo.css';
+import { ThemeContext } from '../../_components/ThemeContext';
+import '../../_styleSheets/Todo.css';
 import { TodoContext } from './TodoContext';
 import TodoDetails from './TodoDetails';
 

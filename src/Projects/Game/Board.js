@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import Square from './Square';
-import { ThemeContext } from '../ThemeContext';
+import { ThemeContext } from '../../_components/ThemeContext';
 
 
 const Board = ({ squares, onClick }) => {
