@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-	<link rel="stylesheet" type="text/css" href="all-ie-only.css" />
+  <link rel="stylesheet" type="text/css" href="all-ie-only.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#000000" />
   <meta name="description" content="Web site created using create-react-app" />
@@ -18,8 +18,19 @@
 
 <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
-  <div class="ie">It looks like you may be using a web browser version that my site doesn't support. <br/>Make sure you are using a modern browser. :) <br/>Thank you!</div> 
+  <div class="ie">It looks like you may be using a web browser version that my site doesn't support. <br />Make sure you
+    are using a modern browser. :) <br />Thank you!</div>
   <div id="root"></div>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-82109254-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-82109254-1');
+  </script>
+
 </body>
 
 </html>
